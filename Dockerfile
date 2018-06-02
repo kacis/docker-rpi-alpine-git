@@ -1,6 +1,6 @@
-FROM alpine
+FROM ctarwater/armhf-alpine-rpi-base
 
-LABEL maintainer Bill Wang <ozbillwang@gmail.com>
+MAINTAINER kacis.m@gmail.com
 
 RUN apk --update add git openssh && \
     rm -rf /var/lib/apt/lists/* && \
