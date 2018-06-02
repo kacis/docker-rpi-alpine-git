@@ -2,10 +2,11 @@
 
 A useful simple git container running in alpine Linux, especially for tiny Linux distro, such as RancherOS, which doesn't have a package manager.
 
-[![DockerHub Badge](http://dockeri.co/image/kacis/docker-rpi-alpine-git)](https://hub.docker.com/r/kacis/docker-rpi-alpine-git/)
-## Docker image
-[![](https://images.microbadger.com/badges/image/kacis/docker-rpi-alpine-git.svg)](https://microbadger.com/images/kacis/docker-rpi-alpine-git "Get your own image badge on microbadger.com")
-[![](https://images.microbadger.com/badges/version/kacis/docker-rpi-alpine-git.svg)](https://microbadger.com/images/kacis/docker-rpi-alpine-git "Get your own version badge on microbadger.com")
+[![DockerHub Badge](http://dockeri.co/image/kacis/docker-rpi-alpine-git)](https://hub.docker.com/r/kacis/docker-rpi-alpine-git/)     
+
+[![](https://images.microbadger.com/badges/image/kacis/docker-rpi-alpine-git.svg)](https://microbadger.com/images/kacis/docker-rpi-alpine-git "Get your own image badge on microbadger.com")     
+
+[![](https://images.microbadger.com/badges/version/kacis/docker-rpi-alpine-git.svg)](https://microbadger.com/images/kacis/docker-rpi-alpine-git "Get your own version badge on microbadger.com")     
 
 ### usage
 
