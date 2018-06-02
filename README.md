@@ -1,16 +1,16 @@
-### docker-git-alpine
+### docker-rpi-alpine-git
 
 A useful simple git container running in alpine Linux, especially for tiny Linux distro, such as RancherOS, which doesn't have a package manager.
 
-[![DockerHub Badge](http://dockeri.co/image/alpine/git)](https://hub.docker.com/r/alpine/git/)
+[![DockerHub Badge](http://dockeri.co/image/kacis/docker-rpi-alpine-git)](https://hub.docker.com/r/kacis/docker-rpi-alpine-git/)
 
 ### usage
 
-    docker run -ti --rm -v ${HOME}:/root -v $(pwd):/git alpine/git <git_command>
+    docker run -ti --rm -v ${HOME}:/root -v $(pwd):/git kacis/docker-rpi-alpine-git <git_command>
 
 For example, if you need clone this repository, you can run
 
-    docker run -ti --rm -v ${HOME}:/root -v $(pwd):/git alpine/git clone https://github.com/alpine-docker/git.git
+    docker run -ti --rm -v ${HOME}:/root -v $(pwd):/git kacis/docker-rpi-alpine-git clone https://github.com/kacis/docker-rpi-alpine-git.git
     
 ### Optional usage 1:
 
@@ -21,7 +21,7 @@ To save your type, add this fuction to `~/.bashrc` or `~/.profile`
     ...
     
     function git () {
-        (docker run -ti --rm -v ${HOME}:/root -v $(pwd):/git alpine/git "$@")
+        (docker run -ti --rm -v ${HOME}:/root -v $(pwd):/git kacis/docker-rpi-alpine-git "$@")
     }
     
     ...
@@ -30,11 +30,11 @@ To save your type, add this fuction to `~/.bashrc` or `~/.profile`
 
 for example, if you need clone this repository, with the function you just set, you can run it as local command
 
-    git clone https://github.com/alpine-docker/git.git
+    git clone https://github.com/kacis/docker-rpi-alpine-git.git
 
 ### Optional usage 2:
 
-    alias git="docker run -ti --rm -v $(pwd):/git -v $HOME/.ssh:/root/.ssh alpine/git"
+    alias git="docker run -ti --rm -v $(pwd):/git -v $HOME/.ssh:/root/.ssh kacis/docker-rpi-alpine-git"
     
 #### NOTES:
 
@@ -44,10 +44,10 @@ for example, if you need clone this repository, with the function you just set, 
 ## Demo
 
     $ cd application
-    $ alias git="docker run -ti --rm -v $(pwd):/git -v $HOME/.ssh:/root/.ssh alpine/git"
+    $ alias git="docker run -ti --rm -v $(pwd):/git -v $HOME/.ssh:/root/.ssh kacis/docker-rpi-alpine-git"
     $ git clone git@github.com:YOUR_ACCOUNT/YOUR_REPO.git
     $ cd YOUR_REPO
-    $ alias git="docker run -ti --rm -v $(pwd):/git -v $HOME/.ssh:/root/.ssh alpine/git"
+    $ alias git="docker run -ti --rm -v $(pwd):/git -v $HOME/.ssh:/root/.ssh kacis/docker-rpi-alpine-git"
     # edit several files
     $ git add . 
     $ git status
